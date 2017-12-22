@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { AlarmsPage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { LiveAlarmPage } from '../pages/live-alarm/live-alarm';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -17,7 +18,8 @@ import { IonicStorageModule } from '@ionic/storage';
     MyApp,
     AboutPage,
     AlarmsPage,
-    TabsPage
+    TabsPage,
+    LiveAlarmPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import { IonicStorageModule } from '@ionic/storage';
     MyApp,
     AboutPage,
     AlarmsPage,
-    TabsPage
+    TabsPage,
+    LiveAlarmPage
   ],
   providers: [
     StatusBar,
