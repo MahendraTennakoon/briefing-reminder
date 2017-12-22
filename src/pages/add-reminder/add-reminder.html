@@ -7,7 +7,7 @@
 <ion-header>
     <ion-toolbar>
       <ion-title>
-        Add New Reminder
+        Add Alarm
       </ion-title>
       <ion-buttons start>
         <button ion-button (click)="dismiss()">
@@ -22,32 +22,32 @@
     <ion-list>
   
       <ion-item>
-        <ion-label floating>Reminder Name</ion-label>
+        <ion-label floating>Name</ion-label>
         <ion-input type="text" [(ngModel)]="reminder.reminderTitle"></ion-input>
       </ion-item>
   
       <ion-item>
-        <ion-label floating>Reminder Description</ion-label>
+        <ion-label floating>Description</ion-label>
         <ion-textarea [(ngModel)]="reminder.reminderDescription"></ion-textarea>
       </ion-item>
   
       <ion-item>
-        <ion-label>Reminder Date</ion-label>
+        <ion-label>Date</ion-label>
         <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
       </ion-item>
   
       <ion-item>
-        <ion-label>Reminder Time</ion-label>
+        <ion-label>Time</ion-label>
         <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
       </ion-item>
   
       <ion-item>
-        <ion-label>Read News</ion-label>
+        <ion-label>Brief News</ion-label>
         <ion-toggle checked="false" [(ngModel)]="reminder.reminderReadNews"></ion-toggle>
       </ion-item>
       <br>
       <button ion-button item-end outline icon-end (click)="saveReminder()">
-        Save Reminder
+        Save
         <ion-icon name='archive'></ion-icon>
       </button>
     </ion-list>

@@ -1,16 +1,16 @@
 <ion-header>
     <ion-navbar>
-      <ion-title>Reminders</ion-title>
+      <ion-title>Alarms</ion-title>
     </ion-navbar>
   </ion-header>
   
   <ion-content padding>
     <button (click)="showModal()" ion-button color="dark" round icon-start>
       <ion-icon name='add' is-active="false"></ion-icon>
-      Add Reminder
+      Add Alarm
     </button>
     <h4>
-      <ion-icon name="alarm"></ion-icon> &nbsp; Current Reminders</h4>
+      <ion-icon name="alarm"></ion-icon> &nbsp; Current Alarms</h4>
     <hr>
     <ion-card *ngFor="let reminder of reminders">
   
